@@ -3,6 +3,7 @@ import './App.css'
 import AboutUs from './Components/AboutUs'
 import CursorFollower from './Components/CursorFollower'
 import HeroSection from './Components/HeroSection'
+import OurProcess from './Components/OurProcess'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
 <CursorFollower />
   <HeroSection />
   <AboutUs/>
+  <OurProcess />
   </>
   )
 }

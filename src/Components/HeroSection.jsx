@@ -26,7 +26,7 @@ function HeroSection() {
 
         {/* Main line */}
         <motion.h1
-          className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mt-4 leading-tight font-playfair drop-shadow-2xl hover:scale-105 hover:text-sky-400 transition duration-500 ease-in-out"
+          className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mt-4 leading-tight font-playfair drop-shadow-2xl  transition duration-500 ease-in-out"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
@@ -41,7 +41,8 @@ function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1, ease: "easeOut" }}
         >
-          — The Himalayan Devs —
+        🏔️ The Himalayan Devs
+
         </motion.h2>
 
         {/* Call to Action Button */}

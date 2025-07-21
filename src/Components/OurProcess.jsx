@@ -83,26 +83,26 @@ const OurProcess = () => {
             const xDirection = isFromLeft ? -50 : 50;
 
             return (
-              <motion.div
-                key={index}
-                ref={ref}
-                initial="hidden"
-                animate={controls}
-                variants={{
-                  visible: { opacity: 1, x: 0 },
-                  hidden: { opacity: 0, x: xDirection },
-                }}
-                transition={{ duration: 0.5, delay: index * 0.3 }}
-                className="flex items-center p-4 border border-gray-700 rounded-lg transform transition duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-lg"
-              >
-                <div className="w-12 flex items-center justify-center">
-                  {step.icon}
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-xl font-semibold">{step.title}</h3>
-                  <p className="text-gray-400">{step.description}</p>
-                </div>
-              </motion.div>
+             <motion.div
+  key={index}
+  ref={ref}
+  initial="hidden"
+  animate={controls}
+  variants={{
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: xDirection },
+  }}
+  transition={{ duration: 0.5, delay: index * 0.3 }}
+  className="flex flex-col md:flex-row md:items-center gap-4 p-4 border border-gray-700 rounded-lg transform transition duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-lg"
+>
+  <div className="w-full md:w-12 flex items-center justify-center">
+    {step.icon}
+  </div>
+  <div className="text-center md:text-left md:ml-4">
+    <h3 className="text-lg md:text-xl font-semibold">{step.title}</h3>
+    <p className="text-sm md:text-base text-gray-400">{step.description}</p>
+  </div>
+</motion.div>
             );
           })}
         </div>

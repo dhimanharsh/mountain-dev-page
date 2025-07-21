@@ -12,6 +12,7 @@ function App() {
 <CursorFollower />
   <HeroSection />
   <AboutUs/>
+  <OurProcess />
   </>
   )
 }

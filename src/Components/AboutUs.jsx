@@ -46,30 +46,36 @@ function AboutUs() {
             experiences that reach beyond the clouds.
           </p>
           {/* Reusable Card Component */}
-              <section id="about" className=" text-white py-24 px-4 sm:px-8">
+
+
+  <section id="about" className="bg-black text-white py-24 px-4 sm:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
         {aboutContent.map((item) => (
           <motion.div
             key={item.title}
-            className={`relative group w-full min-h-[300px] flex items-center justify-center rounded-xl bg-gradient-to-br from-slate-900 via-slate-950 to-black border-2 border-${item.color}-800 hover:border-${item.color}-400 hover:shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:shadow-${item.color}-500 transition-all duration-500 overflow-hidden`}
+            className={`relative w-full flex flex-col items-start justify-start rounded-xl bg-gradient-to-br from-slate-900 via-slate-950 to-black border-2 border-${item.color}-800 hover:border-${item.color}-400 hover:shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:shadow-${item.color}-500 transition-all duration-500 p-6 sm:p-8 hover:scale-[1.02]`}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: item.delay }}
             viewport={{ once: true }}
           >
-            <div className="text-center px-4">
-              <h2 className={`text-3xl md:text-4xl font-bold  tracking-wide text-${item.color}-400 group-hover:opacity-0 transition-opacity duration-300`}>
-                {item.title}
-              </h2>
-            </div>
-            <div className={`absolute bottom-[-100%] left-0 w-full h-full bg-slate-900 text-white group-hover:bottom-0 transition-all duration-500 rounded-xl flex flex-col items-center justify-center p-6 text-sm leading-relaxed text-center border-t-2 border-${item.color}-500`}>
-              <h3 className={`text-${item.color}-400 font-semibold text-lg mb-2`}>{item.title}</h3>
-              <p className="text-gray-300">{item.text}</p>
-            </div>
+            <h2 className={`text-xl sm:text-2xl md:text-3xl font-semibold font-serif tracking-wide text-${item.color}-400 mb-4 transition-colors duration-300 group-hover:text-${item.color}-300`}>
+              {item.title}
+            </h2>
+            <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+              {item.text}
+            </p>
           </motion.div>
         ))}
       </div>
-    </section>        </div>
+    </section>
+
+
+
+
+
+
+        </div>
       </section>
     </div>
   );

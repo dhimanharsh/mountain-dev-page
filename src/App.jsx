@@ -1,5 +1,6 @@
 
 import './App.css'
+import AboutUs from './Components/AboutUs'
 import HeroSection from './Components/HeroSection'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
   <>
   <HeroSection />
+  <AboutUs/>
   </>
   )
 }

@@ -1,6 +1,7 @@
 import "./App.css";
 import AboutUs from "./Components/AboutUs";
 import CursorFollower from "./Components/CursorFollower";
+import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
 import OurProcess from "./Components/OurProcess";
 import OurSpecialization from "./Components/OurSpecialization";
@@ -15,6 +16,7 @@ function App() {
       <OurProcess />
       <OurSpecialization />
       <TechStack />
+      <Footer />
     </>
   );
 }

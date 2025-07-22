@@ -53,7 +53,7 @@ const TechStack = () => {
 
   return (
    <>
-   <p></p>
+   
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 py-16 overflow-hidden">
       <h2 className="text-3xl sm:text-4xl font-bold font-poppins mb-12">
         Our Tech Stack

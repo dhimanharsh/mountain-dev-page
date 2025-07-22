@@ -36,7 +36,7 @@ function HeroSection() {
 
         {/* Company name */}
         <motion.h2
-          className="text-lg sm:text-2xl md:text-3xl font-semibold text-sky-400 mt-8 font-montserrat italic tracking-wide hover:text-sky-300 hover:scale-105 transition duration-300"
+          className="text-lg sm:text-2xl md:text-3xl font-semibold  text-[#6c63ff] mt-8 font-montserrat italic tracking-wide hover:text-sky-300 hover:scale-105 transition duration-300"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1, ease: "easeOut" }}
@@ -49,7 +49,7 @@ function HeroSection() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-12 px-6 py-3 bg-sky-500 text-white text-sm sm:text-base rounded-full shadow-lg hover:bg-sky-600 transition duration-300 ease-in-out"
+          className="mt-12 px-6 py-3 bg-[#6c63ff] text-white text-sm sm:text-base rounded-full shadow-lg hover:bg-sky-600 transition duration-300 ease-in-out"
         >
           Let's Build Something
         </motion.button>

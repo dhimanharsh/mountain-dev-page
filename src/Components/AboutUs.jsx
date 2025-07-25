@@ -30,7 +30,7 @@ const aboutContent = [
 
 function AboutUs() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen" id="about">
       {/* Radial Gradient Background */}
       <div className="absolute top-0 left-0 w-full h-full z-[-2] bg-black bg-[radial-gradient(ellipse_100%_80%_at_50%_-20%,rgba(80,80,80,0.2),black)]"></div>
       {/* main section */}
@@ -47,34 +47,32 @@ function AboutUs() {
           </p>
           {/* Reusable Card Component */}
 
-
-  <section id="about" className="bg-black text-white py-24 px-4 sm:px-8">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {aboutContent.map((item) => (
-          <motion.div
-            key={item.title}
-            className={`relative w-full flex flex-col items-start justify-start rounded-xl bg-gradient-to-br from-slate-900 via-slate-950 to-black border-2 border-${item.color}-800 hover:border-${item.color}-400 hover:shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:shadow-${item.color}-500 transition-all duration-500 p-6 sm:p-8 hover:scale-[1.02]`}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: item.delay }}
-            viewport={{ once: true }}
+          <section
+            id="about"
+            className="bg-black text-white py-24 px-4 sm:px-8"
           >
-            <h2 className={`text-xl sm:text-2xl md:text-3xl font-semibold font-serif tracking-wide text-${item.color}-400 mb-4 transition-colors duration-300 group-hover:text-${item.color}-300`}>
-              {item.title}
-            </h2>
-            <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              {item.text}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-    </section>
-
-
-
-
-
-
+            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {aboutContent.map((item) => (
+                <motion.div
+                  key={item.title}
+                  className={`relative w-full flex flex-col items-start justify-start rounded-xl bg-gradient-to-br from-slate-900 via-slate-950 to-black border-2 border-${item.color}-800 hover:border-${item.color}-400 hover:shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:shadow-${item.color}-500 transition-all duration-500 p-6 sm:p-8 hover:scale-[1.02]`}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, delay: item.delay }}
+                  viewport={{ once: true }}
+                >
+                  <h2
+                    className={`text-xl sm:text-2xl md:text-3xl font-semibold font-serif tracking-wide text-${item.color}-400 mb-4 transition-colors duration-300 group-hover:text-${item.color}-300`}
+                  >
+                    {item.title}
+                  </h2>
+                  <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                    {item.text}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </section>
         </div>
       </section>
     </div>

@@ -28,6 +28,9 @@ export default function Navbar() {
           <li>
             <a href="#contact" className="hover:text-sky-400 transition duration-300">Contact</a>
           </li>
+           <li>
+            <a href="#vision" className="hover:text-sky-400 transition">Vision</a>
+          </li>
         </ul>
 
         {/* Hamburger */}
@@ -66,6 +69,9 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#contact" className="hover:text-sky-400 transition">Contact</a>
+          </li>
+           <li>
+            <a href="#vision" className="hover:text-sky-400 transition">Vision</a>
           </li>
         </ul>
       )}

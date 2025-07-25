@@ -127,7 +127,7 @@ const OurProcess = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-12">
+    <div className="bg-black text-white py-12" id="vision">
       <div className="container mx-auto px-4 max-w-3xl">
         <h2 className="text-4xl font-bold text-center mb-12">🔍 Our Process — From Vision to Victory</h2>
         <div className="flex flex-col space-y-4">

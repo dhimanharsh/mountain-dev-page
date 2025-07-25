@@ -58,7 +58,7 @@ const OurSpecializations = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-black text-white py-16" id="services">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 tracking-tight">
          🚀 Our Specializations — Where Innovation Meets Execution

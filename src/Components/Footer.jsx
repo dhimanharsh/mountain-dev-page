@@ -5,7 +5,6 @@ function Footer() {
     <div class="relative h-full w-full bg-black" id="contact">
       <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
       {/* start here */}
-
       <div className="relative  text-white text-center py-24 px-4 overflow-hidden">
         {/* Background Watermark */}
         <p
@@ -39,18 +38,18 @@ function Footer() {
           {/* Social Icons */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/the-himalayan-devs-264392376"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn.simpleicons.org/linkedin/6c63ff"
+                src="/linkedin.svg"
                 alt="LinkedIn"
                 className="w-6 h-6 sm:w-7 sm:h-7 hover:scale-110 transition-transform"
               />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/thehimalayandevs712?igsh=cGJiYnJvMWwyN3lm"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -66,7 +65,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn.simpleicons.org/facebook/6c63ff"
+                src="/fb.svg"
                 alt="Facebook"
                 className="w-6 h-6 sm:w-7 sm:h-7 hover:scale-110 transition-transform"
               />
@@ -77,7 +76,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn.simpleicons.org/github/6c63ff"
+                src="/githubcolor.svg"
                 alt="GitHub"
                 className="w-6 h-6 sm:w-7 sm:h-7 hover:scale-110 transition-transform"
               />
@@ -88,7 +87,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn.simpleicons.org/twitter/6c63ff"
+                src="/twitter.svg"
                 alt="Twitter"
                 className="w-6 h-6 sm:w-7 sm:h-7 hover:scale-110 transition-transform"
               />
